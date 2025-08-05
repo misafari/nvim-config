@@ -22,11 +22,8 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
-          --ts_ls: for javascript, typescript
           "ts_ls",
-          --jdtls: for java
           "jdtls",
-          "eslint_d"
         },
       })
     end
