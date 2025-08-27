@@ -24,6 +24,7 @@ return {
           "lua_ls",
           "ts_ls",
           "jdtls",
+          "pyright",
         },
       })
     end
@@ -41,6 +42,9 @@ return {
         capabilities = capabilities
       })
       lspconfig.jdtls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.pyright.setup({
         capabilities = capabilities
       })
 
